@@ -10,14 +10,12 @@
     </head>
     <!--body (cuerpo de la pagina web)-->
     <body>
-        <!--header (encabezado de la pagina web)-->
+        <!--header (encabezado del cuerpo de la web)-->
         <header>
             <!--table (partes en que se divide el encabezado de la web. Se ha dividido en 4 columnas ó tr)-->
-            <table width="100%" bgcolor="#061A33">
-                <!--tr se refiere a las filas de la tabla-->
-                <tr>
-                    <!--td se refiere a las columnas de una tabla-->
-                    <td width="25%" align="center" valign="middle"> 
+            <table width="100%" bgcolor="#061A33"><!--width 100% significa que se usa todo el ancho de la pantalla. el bgcolor le da el color a ese sector-->
+                <tr> <!--la etiqueta tr hace referencia a la fila de una tabla-->
+                    <td width="25%" align="center" valign="middle"> <!--td se refiere a las columnas de una tabla-->
                         <!--en la primera columna de la tabla se incorpora otra tabla para imagen y texto se combinen-->
                         <table>
                             <tr>
@@ -40,7 +38,7 @@
                         </table>
                     </td>
                     <td width="33.3%" align="center"> <font face="Montserrat,arial" color="white" size="5">Menú principal</font> </td>
-                    <td width="16.6%" align="center"> <font face="Montserrat,arial" color="white" size="5">Zona Clientes</font> </td>
+                    <td width="16.6%" align="center"><a href="dist/zona_clientes.html"><font face="Montserrat,arial" color="white" size="5">Zona Clientes</font></a> </td>
                     <!--creamos el boton CONTACTO, damos color al boton y la fuente dentro del boton-->
                         <td width="25%" align="center"> 
                             <a href="dist/contacto.html">    
@@ -400,10 +398,16 @@
             <!-- espacio derecho -->
             <td width="10%"></td>
         </tr>
+         
+    </table>
+    <table>
+        <tr>
+            <td width="100%" color="white"></td>
+        </tr>
     </table>
     </main>
     </body>
-<!-- FOOTER / PIE DE PÁGINA -->
+<!--footer/pie de pagina -->
 <footer>
     <table width="100%" bgcolor="#061A33">
         <tr>
@@ -443,20 +447,27 @@
                 <br>
                 <font face="Montserrat, Arial" color="white" size="4">
                     <b>ENLACES RÁPIDOS</b>
-                    Inicio<br><br>
-                    Nosotros<br><br>
-                    Servicios<br><br>
-                    Flota<br><br>
-                    Zona Clientes<br><br>
-                    Contacto
                 </font>
+                <br>
+                <br>
+                <a href="../index.html">
+                <font face="Montserrat, Arial" color="white" size="3">Inicio<br><br></font></a>
+                <a href="dist/nosotros.html">
+                <font face="Montserrat, Arial" color="white" size="3">Nosotros<br><br></font></a>
+                <a href="dist/flota.html">
+                <font face="Montserrat, Arial" color="white" size="3">Flota<br><br></font></a>
+                <a href="dist/zona_clientes.html">
+                <font face="Montserrat, Arial" color="white" size="3">Zona clientes<br><br></font></a>
+                <a href="dist/contacto.html">
+                <font face="Montserrat, Arial" color="white" size="3">Contacto<br><br></font></a>
             </td>
             <!-- columna 3: servicios -->
             <td width="22%" valign="top">
                 <br>
+                <a href="dist/servicios.html">
                 <font face="Montserrat, Arial" color="white" size="4">
                     <b>SERVICIOS</b>
-                </font>
+                </font></a>
                 <br><br>
                 <font face="Arial" color="white" size="3">
                     Transporte de carga general<br><br>
@@ -472,12 +483,24 @@
                     <b>CONTACTO</b>
                 </font>
                 <br><br>
-                <font face="Arial" color="white" size="3">
-                    📍 Lima, Perú<br><br>
-                    📞 949 167 620<br><br>
-                    ✉️ operaciones@sargon.com.pe<br><br>
-                    🕒 Lun - Vie: 8:00 am - 6:00 pm
-                </font>
+                <table>
+                    <tr>
+                        <td><img src="imagenes/ubicacion.png" width="25" align="center"></td>
+                        <td><font face="Montserrat, Arial" color="white" size="3">Manuel Clavero 2065, SMP, Lima, Perú</font></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/teléfono.png" width="25" align="center"></td>
+                        <td><font face="Montserrat, Arial" color="white" size="3">949 167 620</font></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/mail.png" width="25" align="center"></td>
+                        <td><font face="Montserrat, Arial" color="white" size="3">sargon.operaciones@gmail.com</font></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/reloj.png" width="25" align="center"></td>
+                        <td><font face="Montserrat, Arial" color="white" size="3">Lun - Vie: 8:00 am - 6:00 pm</font></td>
+                    </tr>
+                </table>
             </td>
             <!-- margen derecho -->
             <td width="5%"></td>
